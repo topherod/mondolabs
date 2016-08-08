@@ -1,0 +1,54 @@
+// STYLE FOR FOOTER
+
+.footer {
+	background: $primary-color;
+	padding: 60px 40px;
+	max-height: 400px;
+	.main-menu {
+		list-style: none;
+		margin: 0;
+		margin-bottom: 1em;
+		font-size: 1.1em;
+		text-align: center;
+		line-height: 2em;
+		width: 100%;
+		li {
+			display: block;
+			color: $white;
+			letter-spacing: .2em;
+			text-transform: uppercase;
+			@media #{$medium-up} {
+				display: inline-block;
+				margin-right: 40px;
+			}
+		}
+		a {
+			color: $white;
+		}
+		.divider {
+			display: none;
+		}
+	}
+	.copyright {
+		text-align: center;
+		font-size: 1em;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 400;
+		img.logo {
+			height: .9em;
+			width: auto;
+			display: inline;
+			margin: 0 3px 0 4px;
+			vertical-align: baseline;
+		}
+	}
+}
+
+// Add some whitespace above the footer for medium-up screens
+
+@media #{$medium-up} {
+	footer.row {
+		margin-top: rem-calc(60);
+	}
+}

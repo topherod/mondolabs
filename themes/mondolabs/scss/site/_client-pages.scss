@@ -1,0 +1,36 @@
+.mockup-post {
+	ul.pages, li.page, .mockups, .mockup {
+		list-style: none;
+		margin: 0;
+	}
+	.page h2 {
+		border-bottom: 1px solid $black;
+		margin-bottom: 20px;
+	}
+	.mockup {
+		margin-bottom: 40px;
+		a.mockup-image {
+			display: block;
+			width: 100%;
+			background: rgba( #666, .7 );
+			padding: 10px;
+			border-radius: 20px;
+			text-align: center;
+			@include single-transition();
+			&:hover {
+				background: rgba( #666, .4 );
+			}
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+.client-mockups-color-background {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background: $black;
+	margin-bottom: 40px;
+}

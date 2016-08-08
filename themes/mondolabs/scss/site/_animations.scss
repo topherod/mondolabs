@@ -1,0 +1,135 @@
+
+.animated {
+  -webkit-animation-duration: 8s;
+  animation-duration: 8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.homepage-splash-backgrounds {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 0;
+	-webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-name: changeSplashBackgrounds;
+  animation-name: changeSplashBackgrounds;
+  @media #{$medium-up} {
+    opacity: .8;
+  }
+}
+
+@-webkit-keyframes changeSplashBackgrounds {
+	0% {
+		background: $primary-color;
+	}
+	30% {
+		background: $primary-color;
+	}
+	40% {
+		background: $compliment-color;
+	}
+	60% {
+		background: $compliment-color;
+	}
+	70% {
+		background: $secondary-color;
+	}
+	90% {
+		background: $secondary-color;
+	}
+	100% {
+		background: $primary-color;
+	}
+}
+
+@keyframes changeSplashBackgrounds {
+	0% {
+		background: $secondary-color;
+	}
+	10% {
+		background: $primary-color;
+	}
+	33% {
+		background: $primary-color;
+	}
+	43% {
+		background: $compliment-color;
+	}
+	66% {
+		background: $compliment-color;
+	}
+	76% {
+		background: $secondary-color;
+	}
+	100% {
+		background: $secondary-color;
+	}
+}
+
+
+@-webkit-keyframes zoomInOut {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  90% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomInOut {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  90% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoomInOut {
+  -webkit-animation-name: zoomInOut;
+  animation-name: zoomInOut;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}

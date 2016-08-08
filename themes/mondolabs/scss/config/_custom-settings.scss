@@ -1,0 +1,76 @@
+/* 
+	My custom settings. These variables are copied from _settings.css
+	This file will only contain uncommented settings that are actually used in the theme.
+*/
+
+@import "mixins";
+@import "fonts"; // File where embedded fonts are added
+
+
+// We use these to define default font stacks
+$font-family-sans-serif: "Futura", Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: Georgia, Cambria, Times, serif;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+
+// We use these to define default font weights
+$font-weight-normal: 500 !default;
+$font-weight-bold: 600 !default;
+
+// Foundation color naming conventions
+$mondolabs_blue	:	#29B5E3;
+$ML_darkblue		:	#2169A8;
+$ML_offwhite		: #F1F1F1;
+$ML_black				:	#222222;
+$ML_salmon			:	#FF5A36;
+$white       		: #FFFFFF;
+$ghost       		: #FAFAFA;
+$snow        		: #F9F9F9;
+$vapor       		: #F6F6F6;
+$white-smoke 		: #F5F5F5;
+$silver      		: #EFEFEF;
+$smoke       		: #EEEEEE;
+$gainsboro   		: #DDDDDD;
+$iron        		: #CCCCCC;
+$base        		: #AAAAAA;
+$aluminum    		: #999999;
+$jumbo       		: #888888;
+$monsoon     		: #777777;
+$steel       		: #666666;
+$charcoal    		: #555555;
+$tuatara     		: #444444;
+$oil         		: #333333;
+$jet         		: #222222;
+$black       		: #000000;
+$transparent 		:	rgba( 255, 255, 255, 0);
+
+// We use these as default colors throughout
+$primary-color: $mondolabs_blue;
+$secondary-color: $ML_darkblue;
+$compliment-color: $ML_salmon;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+$white: $ML_offwhite;
+$black: $ML_black;
+
+// We use these to control various global styles
+$body-bg: $ML_offwhite;
+$body-font-color: $ML_black;
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+$header-font-weight: 300;
+$header-text-rendering: optimizeLegibility;
+$topbar-link-weight: bold;
+$topbar-bg-color: $transparent;
+
+// Row width
+$row-width: rem-calc(1200);
+
+// Media query breakpoints
+$small-breakpoint:  em-calc(640);
+$medium-breakpoint: em-calc(1024);
+$topbar-breakpoint: em-calc(820);
+$large-breakpoint:  em-calc(1440);
+$xlarge-breakpoint: em-calc(1920);
